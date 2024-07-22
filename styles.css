@@ -44,7 +44,7 @@ body {
 h1 {
 	font-size: 4rem;
 	margin-bottom: 30px;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 	user-select: none;
 }
 
@@ -68,7 +68,7 @@ h2 {
 	font-size: 1.5rem;
 	margin-top: 0;
 	margin-bottom: 15px;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 	user-select: none;
 }
 
@@ -174,7 +174,9 @@ button.active {
 #shopping-list li {
 	font-size: 1rem;
 	margin-bottom: 8px;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	padding: 8px;
 	border-radius: 8px;
 	transition: all 0.3s;
@@ -184,6 +186,7 @@ button.active {
 #shopping-list li:hover {
 	background-color: rgba(255, 255, 255, 0.3);
 	transform: translateX(5px);
+	user-select: none;
 }
 
 @media (max-width: 1200px) {
