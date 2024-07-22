@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co na...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-panel left">
+            <h2>Ostatnio wylosowane</h2>
+            <ul id="recent-meals"></ul>
+        </div>
+        <div class="main-content">
+            <h1 class="floating">Co na...</h1>
+            <div id="meal-type-selector">
+                <button id="breakfast">Śniadanie</button>
+                <button id="lunch">Obiad</button>
+                <button id="dinner">Kolacja</button>
+            </div>
+            <div id="price-category">
+                <button id="cheap">Tanie</button>
+                <button id="expensive">Drogie</button>
+            </div>
+            <div id="meal">Kliknij, aby wylosować!</div>
+            <div id="recipe"></div>
+            <div id="price-slider">
+                <input type="range" id="max-price" min="5" max="50" value="30" step="1">
+                <span id="price-display">Max cena: 30 zł</span>
+            </div>
+            <button id="search-google">Szukaj w Google</button>
+        </div>
+        <div class="side-panel right">
+            <h2>Lista zakupów</h2>
+            <ul id="shopping-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
