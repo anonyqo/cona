@@ -188,9 +188,9 @@ const searchGoogleButton = document.getElementById("search-google");
 
 function setBackgroundColor(mealType) {
 	const colors = {
-		breakfast: "linear-gradient(180deg, #5edaff 0%, #14b9ff 100%)", // Jasnoniebieski
-		lunch: "linear-gradient(180deg, #FFA500 0%, #FF8C00 100%)",
-		dinner: "linear-gradient(180deg, #4B0082 0%, #8A2BE2 100%)",
+		breakfast: "linear-gradient(180deg, #03d5ff 0%, #0099ff 100%)", // Jasnoniebieski
+		lunch: "linear-gradient(180deg, #ffcc00 0%, #FF8C00 100%)",
+		dinner: "linear-gradient(180deg, #00db96 0%, #00d10e 100%)",
 	};
 	document.body.style.background = colors[mealType];
 }
@@ -211,7 +211,7 @@ function updateMeal() {
 		if (meal) {
 			currentMeal = meal;
 			mealElement.textContent = meal.name;
-			recipeElement.textContent = `Przepis: ${meal.recipe}`;
+			recipeElement.textContent = `${meal.recipe}`;
 			addToRecentMeals(meal);
 			updateShoppingList(meal);
 		} else {
